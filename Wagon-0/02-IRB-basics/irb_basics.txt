@@ -1,1 +1,9 @@
 // Copy your irb shell history below !
+
+my name = "Estelle"
+
+def say_hi_to(name)
+"Hello #{name}, welcome to the Ouagon !"
+end
+
+say_hi_to(name)
