@@ -1,2 +1,22 @@
 // Copy some experiments you made on ruby String and Fixnum objects below !
-// You choose pick 3 methods for String and 3 methods for Fixnum
+// You choose pick 3 methods for String and 3 methods for 
+
+irb(main):017:0> "A string object".methods.class
+=> Array
+irb(main):018:0> "A string object".class.class
+=> Class
+irb(main):019:0> "Ma string class".length
+=> 15
+irb(main):020:0> "Ma string class".reverse
+=> "ssalc gnirts aM"
+irb(main):021:0> "Ma string class".capitalize
+=> "Ma string class"
+irb(main):022:0> "Ma string class".upcase
+=> "MA STRING CLASS"
+
+irb(main):023:0> 7 ** 4
+=> 2401
+irb(main):025:0> 7.odd?
+=> true
+irb(main):028:0> -8.abs
+=> 8
