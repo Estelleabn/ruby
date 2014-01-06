@@ -1,9 +1,12 @@
 // Copy your irb shell history below !
 
-my name = "Estelle"
-
-def say_hi_to(name)
-"Hello #{name}, welcome to the Ouagon !"
-end
-
-say_hi_to(name)
+irb(main):015:0> my_name = "Estelle"
+=> "Estelle"
+irb(main):016:0> def say_hi_to(name)
+irb(main):017:1> puts "Hello #{name}, welcome to the Ouagon!"
+irb(main):018:1> end
+=> nil
+irb(main):019:0> say_hi_to(my_name)
+Hello Estelle, welcome to the Ouagon!
+=> nil
+irb(main):020:0>
