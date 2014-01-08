@@ -7,5 +7,12 @@ chapters = [
              ['Viandes et Gibiers', 38],
              ['Poissons, coquillages et crustaces', 157]
            ]
-           
+                   
 # You program goes here !
+
+puts title.center(70)
+chapters.each do |x, y|
+	print "Chapter #{chapters.index([x, y]) + 1} : ".ljust(10)
+	print "#{x}".ljust(45)
+	puts "page #{y}".rjust(15)
+end
