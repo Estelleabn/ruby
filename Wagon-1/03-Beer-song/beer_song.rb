@@ -1,5 +1,20 @@
 def beersong(nb_at_start)
-  # your code goes here
+
+	n = nb_at_start.to_i
+
+
+	while n > 0
+		bottles_string = (n == 2) ? "bottle" : "bottles"		
+		case n
+			when 1
+				puts "1 bottle of beer on the wall, 1 bottle of beer!"
+  			puts "Take one down, pass it around, no more bottles of beer on the wall!"
+  		else
+  			puts "#{n} bottles of beer on the wall, #{n} bottles of beer!"
+  			puts "Take one down, pass it around, #{n - 1} #{bottles_string} of beer on the wall!"
+  	end
+  	n -= 1
+  end
 end
 
 beersong( ARGV[0] )
