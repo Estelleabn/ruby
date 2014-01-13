@@ -14,12 +14,12 @@
 
 
 def louchebem_converter(word)
-  first_consonant = word.split(/["a","e","i","o","u"]/).first
-  suffix_array = %w(em arg es an o it)
+  first_consonant = word.split(/["a","e","i","o","u", "y"]/).first
+  suffix_array = %w(em arg es an o it uche)
 
   word_troncate = word.delete(first_consonant)
 
-  louchebem_word = "l" + word_troncate + first_consonant + suffix_array[rand(suffix_array.length)]
+  louchebem_word = "L" + word_troncate + first_consonant.downcase + suffix_array[rand(suffix_array.length)]
   return louchebem_word
 end
 
