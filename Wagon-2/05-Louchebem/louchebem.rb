@@ -20,12 +20,12 @@ def louchebem_converter(word)
 
   word_troncate = word.delete(first_consonant)
 
-  louchebem_word = "L" + word_troncate + first_consonant.downcase + suffix_array[rand(suffix_array.length)]
+  louchebem_word = "l" + word_troncate + first_consonant.downcase + suffix_array[rand(suffix_array.length)]
 
   return louchebem_word
 end
 
-def louchebem_sentence(phrase)
+def louchebem_translate(phrase)
   words = phrase.split(" ")
   words.map { |word| louchebem_converter(word) }.join(" ")
 
@@ -34,5 +34,5 @@ end
 puts "Tapez votre phrase a traduire"
 phrase = gets.chomp 
 
-print louchebem_sentence(phrase)
+print louchebem_translate(phrase)
 
