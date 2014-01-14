@@ -1,7 +1,7 @@
 
 def hop_hop_hop(number_of_exercises)
 
-  number_of_exercises.times { |counter| puts "hop! "*counter }
+  number_of_exercises.times { |counter| puts ("hop! "*(counter+1)) + ("Encore une fois") }
   puts 'Encore une fois..' + "\n"
 end
 
